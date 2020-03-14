@@ -12,10 +12,10 @@ Irei mostrar com fazer para calcula o frete da origem para destino.
 
 ## Modo Front-end
 
-    - [ ] Define color
-    - [ ] Define a fonte
+- [x] Define color
+- [x] Define a fonte
 
 ## Desenvolvidor por 
 
-    + Tálisson Bruno
-    [@tbasdev](http://tbasdev.com.br/)
+   + Tálisson Bruno
+    [tbasdev](http://tbasdev.com.br/)
