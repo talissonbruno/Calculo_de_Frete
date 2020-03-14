@@ -1,3 +1,13 @@
+<?php
+    $cep_o = $_POST["n-cep-o"];
+    $cep_d = $_POST["n-cep-d"];
+    $serv  = $_POST["n-serv"];
+    $peso  = $_POST["n-peso"];
+    $comp  = $_POST["n-comp"];
+    $larg  = $_POST["n-larg"];
+    $alt   = $_POST["n-alt"];
+    $val   = $_POST["n-val"];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -46,7 +56,7 @@
         <br>Altura <br/>
         <input type="text" id="id-alt" name="n-alt" required/><br/>
         <br>Valor declarado <br/>
-        <input type="text" id="id-val" name="n-val" required/><br/>
+        <input type="text" id="id-val" name="n-val" onkeyup="mask(this)"/><br/>
         <input name="Calcular" type="submit"><br/>
     </form>
     <script>
@@ -54,11 +64,17 @@
             var cep_o = document.querySelector("#cep-o");
 
             cep_o.addEventListener("keyup",()=>{
-                var val_cep = cep_o.value.replace(/[^0-9]g,"").replace.(/^([\d]{2})?([\d]{3})?([\d]{2})?/,"$1.$2-$3");
+                var val_cep = cep_o.value.replace(/[^0-9]g,"").replace.(/^([\d]{2})?([\d]{3})?([\d]{3})?/,"$1.$2-$3");
 
             cep_o.value = val_cep;
             });
-
+        }
+        function mask(v){
+            var valor = v.value.replace(/\D/g,"");
+            valor = (valor/100).toFixed(2);
+            valor = valor.replace(/(\d)(\d{3})(\d{3}),/g,"$1.$2.$3,");
+            valor = valor.replace(/(\d)(\d{3}),/g,"$1.$2,");
+            v.valor = valor;
         }
     </script>
 </body>
