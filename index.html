@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Frete</title>
+</head>
+<body>
+    <form action="calcular.php" method="post">
+        <br>Cep Origem<br/>
+        <input type="text" id="cep-o" name="n-cep-o"/><br/>
+        <br>Cep Destino<br/>
+        <input type="text" id="cep-d" name="n-cep-d"/><br/>
+        <br>Tipo de Envio<br/>
+        <select name="n-serv" id="s-serv">
+            <option value="41106">PAC</option>
+            <option value="40010">SEDEX</option>
+        </select><br/>
+        <br>Peso <br/>
+        <input type="text" id="id-peso" name="n-peso"/><br/>
+        <br>Comprimento<br/>
+        <input type="text" id="id-comp" name="n-comp"/><br/>
+        <br>Largura <br/>
+        <input type="text" id="id-larg" name="n-larg"/><br/>
+        <br>Altura <br/>
+        <input type="text" id="id-alt" name="n-alt"/><br/>
+        <br>Valor declarado <br/>
+        <input type="text" id="id-val" name="n-val"/><br/>
+        <input type="submit" name="Calculo"><br/>
+    </form>
+</body>
+</html>
