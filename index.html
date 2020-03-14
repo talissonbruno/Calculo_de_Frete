@@ -29,24 +29,24 @@
 <body>
     <form action="calcular.php" method="post">
         <br>Cep Origem<br/>
-        <input type="text" id="cep-o" name="n-cep-o"/><br/>
+        <input type="text" id="cep-o" name="n-cep-o" required/><br/>
         <br>Cep Destino<br/>
-        <input type="text" id="cep-d" name="n-cep-d"/><br/>
+        <input type="text" id="cep-d" name="n-cep-d" required/><br/>
         <br>Tipo de Envio<br/>
         <select name="n-serv" id="s-serv">
             <option value="41106">PAC</option>
             <option value="40010">SEDEX</option>
         </select><br/>
         <br>Peso <br/>
-        <input type="text" id="id-peso" name="n-peso"/><br/>
+        <input type="text" id="id-peso" name="n-peso" required/><br/>
         <br>Comprimento<br/>
-        <input type="text" id="id-comp" name="n-comp"/><br/>
+        <input type="text" id="id-comp" name="n-comp" required/><br/>
         <br>Largura <br/>
-        <input type="text" id="id-larg" name="n-larg"/><br/>
+        <input type="text" id="id-larg" name="n-larg" required/><br/>
         <br>Altura <br/>
-        <input type="text" id="id-alt" name="n-alt"/><br/>
+        <input type="text" id="id-alt" name="n-alt" required/><br/>
         <br>Valor declarado <br/>
-        <input type="text" id="id-val" name="n-val"/><br/>
+        <input type="text" id="id-val" name="n-val" required/><br/>
         <input name="Calcular" type="submit"><br/>
     </form>
 </body>
