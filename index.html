@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo de Frete</title>
+    <style>
+        .body{
+            font-family: arial;
+            font-weight: 600;
+        }
+        input, select {
+            height: 35px;
+            width: 400px;
+            border: 1px solid #9d9b9b;
+            border-radius: 3px;
+            margin: 10px 0;
+            padding: 5px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        input[type="submit"]{
+            background-color: #00EC85;
+            color: #ffffff;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <form action="calcular.php" method="post">
@@ -26,7 +47,7 @@
         <input type="text" id="id-alt" name="n-alt"/><br/>
         <br>Valor declarado <br/>
         <input type="text" id="id-val" name="n-val"/><br/>
-        <input type="submit" name="Calculo"><br/>
+        <input name="Calcular" type="submit"><br/>
     </form>
 </body>
 </html>
