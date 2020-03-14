@@ -49,5 +49,18 @@
         <input type="text" id="id-val" name="n-val" required/><br/>
         <input name="Calcular" type="submit"><br/>
     </form>
+    <script>
+        window.onload = function(){
+            var cep_o = document.querySelector("#cep-o");
+
+            cep_o.addEventListener("keyup",()=>{
+                var val_cep = cep_o.value.replace(/[^0-9]g,"").replace.(/^([\d]{2})?([\d]{3})?([\d]{2})?/,"$1.$2-$3");
+
+            cep_o.value = val_cep;
+            });
+
+            cep_o.
+        }
+    </script>
 </body>
 </html>
